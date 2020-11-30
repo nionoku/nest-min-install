@@ -17,9 +17,15 @@
       "error",
       "never"
     ],
+    "indent": ["error", 2],
     "no-console": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-var-requires": "off",
-    "max-len": ["error", { "code": 80 }]
+    "max-len": ["error", {
+      "code": 80,
+      "ignoreComments": true,
+      "ignoreTrailingComments": true,
+      "ignorePattern": "^import|^export|^class|^interface" }],
+    "space-before-function-paren": ["error", "always"]
   }
 }
