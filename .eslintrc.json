@@ -17,7 +17,13 @@
       "error",
       "never"
     ],
-    "indent": ["error", 2],
+    "indent": ["error", 2, {
+      "ObjectExpression": 1,
+      "SwitchCase": 1,
+      "MemberExpression": 1,
+      "ArrayExpression": 1,
+      "ImportDeclaration": 1
+    }],
     "no-console": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-var-requires": "off",
@@ -25,7 +31,12 @@
       "code": 80,
       "ignoreComments": true,
       "ignoreTrailingComments": true,
-      "ignorePattern": "^import|^export|^class|^interface" }],
-    "space-before-function-paren": ["error", "always"]
+      "ignorePattern": "^import|^export|^class|^interface|^\\s+\\w+\\s\\(.+\\): .+" }],
+    "space-before-function-paren": ["error", "always"],
+    "space-before-blocks": ["error", "always"],
+    "object-curly-spacing": ["error", "always"],
+    "array-bracket-spacing": ["error", "always", {
+      "singleValue": false
+    }]
   }
 }
